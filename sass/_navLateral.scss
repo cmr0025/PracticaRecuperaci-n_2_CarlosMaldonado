@@ -1,0 +1,93 @@
+// variables
+$color-fondo: #0f0f0f;
+$color-boton: #222222;
+$color-boton-2: #272727;
+$color-boton-hover: #3f3f3f;
+$color-boton-hover2: #3d3d3d;
+$color-letra: #f1f1f1;
+$color-letra2: #131313;
+$color-letra3: #aaaaaa;
+
+$tipografia1:  "Roboto", "Arial", sans-serif;
+
+//navLateral
+.navLateral {
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    height: 92vh;
+    width: 15vw;
+    padding:  0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $color-fondo;
+    overflow: hidden;
+}
+
+.contenidoNav{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 5px;
+    scrollbar-width: none; 
+}
+
+
+
+.item {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: $tipografia1;
+    font-weight: bold;
+    color: $color-letra;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 80%;
+
+    img{
+        height: 4vmin;
+        width: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 2vmin;
+    }
+}
+
+.item:hover {
+    background: $color-boton-hover;
+}
+
+.item.activo {
+    background: $color-boton;
+}
+
+.icon {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: $color-boton-2;
+    margin: 10px 0 0 5px ;
+    width: 100%;
+}
+
+h4{
+    color: white;
+    padding-left: 3vmin;
+    margin-bottom: 2px;
+}
+
+p{
+    padding-left: 2vw;
+    padding-right: 3vw;
+    font-size: 12px;
+    font-weight: 100;
+    color: $color-letra3;
+}
