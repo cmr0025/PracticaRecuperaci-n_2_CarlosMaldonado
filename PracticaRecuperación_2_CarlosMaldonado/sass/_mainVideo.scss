@@ -1,0 +1,343 @@
+// variables
+$color-fondo: #0f0f0f;
+$color-boton: #222222;
+$color-boton-2: #272727;
+$color-boton-hover: #3f3f3f;
+$color-boton-hover2: #3d3d3d;
+$color-letra: #f1f1f1;
+$color-letra2: #131313;
+$color-letra3: #aaaaaa;
+
+$tipografia1: "Roboto", "Arial", sans-serif;
+
+
+// main
+
+main {
+    top: 11vh;
+    position: fixed;
+    left: 2vw;
+    width: 96vw;
+    height: 87vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.infoCanal{
+    background-color: #272727;
+    margin-top: 2vmin;
+    height: 7vh;
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column;
+    padding: 2vmin;
+    font-size: small;
+    font-weight: bold;
+}
+
+.mas:hover{
+    cursor: pointer;
+}
+
+
+.comentarios{
+    display: flex;
+    flex-flow: column;
+    padding-top: 2vmin;
+
+}
+
+.infoComentarios{
+    display: flex;
+    height: 4vmin;
+    align-items: center;
+
+
+    h2{
+        margin: 0;
+    }
+
+    button{
+        background: transparent;
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 100%;
+        }
+    }
+}
+
+.inputComentario{
+    margin-top: 2vmin;
+    display: flex;
+
+    
+    img{
+        width: 6vh;
+        height: 5vh;
+        overflow: hidden;
+        border-radius: 40px;
+    }
+
+    input{
+        padding-left: 2vmin;
+        background: transparent;
+        border: none;
+        width: 100%;
+        color: white;
+        font-family: $tipografia1;
+        font-weight: bold;
+    }
+    
+    input:focus,
+    input:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    }
+
+}
+
+.botonesComentarios{
+    margin-top: 2vmin;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.cancelar{
+    background: transparent;
+    color: white;
+}
+
+.comentar{
+    color: $color-letra3;
+}
+.cancelar:hover{
+    background-color: $color-boton-hover;
+}
+
+.contenedorMain{
+    display: flex;
+    gap: 2vw;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none; 
+}
+
+.principal{
+    width: 68vw;
+    color: white;
+
+    iframe{
+        width: 100%;
+        height: 600px;
+        border-radius: 12px;
+    }
+
+    h2{
+        margin-top: 2px;
+
+    }
+}
+
+.otros{
+
+    width: 26%;
+    height: 100%;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-canal {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.foto-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.texto-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-canal {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.suscriptores {
+    font-size: 14px;
+    color: $color-letra3;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: $color-boton;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: $tipografia1;
+    height: 100%;
+}
+
+.unirme {
+    background-color: #3e3e3e;
+}
+
+.suscribirme {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.contenidoComentarios{
+    margin-top: 2vmin;
+    display: flex;
+    flex-flow: column;
+    gap: 2vmin;
+}
+
+.comentario{
+
+    display: flex;
+
+    img{
+        margin-top: 1vmin;
+        width: 7vh;
+        height: 5vh;
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    p{
+        font-weight: medium;
+    }
+
+    .like, .dislike{
+        margin-top: 2vmin;
+        border-radius: 40px;
+        padding: 1vmin;
+        margin-left: 2vmin;
+    }
+    .like:hover,.dislike:hover{
+        cursor: pointer;
+        background-color: $color-boton-hover;
+       
+    }
+
+    button{
+        background:none;
+        font-weight: bold;
+
+        &:hover{
+            background-color: $color-boton-hover2;
+        }
+    }
+
+    
+}
+
+.respuestas{
+    margin-left: 3vmin;
+    color: lightseagreen;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.anuncio{
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px $color-letra3 solid;
+    margin-bottom: 2vmin;
+}
+
+
+.resultado {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    gap: 1vw;
+}
+
+.miniatura {
+    width: 50%;
+    height: 12vmin;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+       border-radius: 0;
+       cursor: pointer;
+    }
+}
+
+.otrosVideos{
+    margin-top: 3vmin;    
+    display: flex;
+    flex-flow: column;
+    gap: 2vmin;
+}
+
+.imgResultado{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    
+}
+
+.titulo {
+    font-size: 14px;
+    font-weight: bolder;
+    color: $color-letra;
+    margin-bottom: 1vmin;
+    margin-top: 0;
+}
+
+.detalles, .canal, .descripcion {
+    font-size: 9px;
+    color: $color-letra3;
+    display: flex;
+    margin-top: 0;
+
+
+}
+
+
